@@ -1,0 +1,100 @@
+/**
+ * Auth Forms v4 — StepBuilder
+ * 
+ * Clean container approach for authentication pages.
+ * Removes shadows/backgrounds from nested folders and focuses on a single elegant card.
+ * 
+ * Original file: uploads/custom-css-js/164.css
+ */
+
+body.page .um {
+    background: #f8fafc;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+body.page .um-form {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 32px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.um .um-form-head h1,
+.um .um-form-head h3 {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 25px;
+}
+
+.um input[type="text"],
+.um input[type="email"],
+.um input[type="password"],
+.um select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #f9fafb;
+}
+
+.um input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.um input[type="submit"]:hover {
+    background: #1e40af;
+}
+
+.um a.um-link {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #2563eb;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.um a.um-link:hover {
+    text-decoration: underline;
+}
+
+.um .um-message {
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.um .um-error {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+.um .um-success {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.um .um .um-form {
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}

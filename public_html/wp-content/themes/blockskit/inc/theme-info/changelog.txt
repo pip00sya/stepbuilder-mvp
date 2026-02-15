@@ -1,0 +1,26 @@
+= 1.0.4 =
+* Update: Getting started plugin list update.
+
+= 1.0.3 =
+* Fix: Functional issue.
+
+= 1.0.2 =
+* Add: Theme info.
+* Add: Page No Title and Blog Listing templates and related patterns.
+* Add: Theme classes for animation, transparent header, fixed header.
+* Add: Language pot file.
+* Add: Additional Header and Footer patterns.
+* Add: Additional site styles.
+* Add: Box shadow option for columns, column, group and image
+* Add: WooCommerce compatibility.
+* Update: Support default blocks features.
+* Update: Homepage template related patterns.
+* Update: RTL language support.
+* Fix: Cover block text color on dark mode.
+* Fix: Secondary button style issue.
+
+= 1.0.1 =
+* Fix: Issues mention by reviewer.
+
+= 1.0.0 =
+* Initial Release.

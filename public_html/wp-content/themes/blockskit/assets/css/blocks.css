@@ -1,0 +1,127 @@
+/*Custom Box Shadow*/
+.wp-block-image.is-style-bk-box-shadow img,
+.wp-block-column.is-style-bk-box-shadow,
+.wp-block-columns.is-style-bk-box-shadow,
+.wp-block-group.is-style-bk-box-shadow {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+}
+.wp-block-image.is-style-bk-box-shadow-medium img,
+.wp-block-column.is-style-bk-box-shadow-medium,
+.wp-block-columns.is-style-bk-box-shadow-medium,
+.wp-block-group.is-style-bk-box-shadow-medium {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
+.wp-block-image.is-style-bk-box-shadow-large img,
+.wp-block-column.is-style-bk-box-shadow-large,
+.wp-block-columns.is-style-bk-box-shadow-large,
+.wp-block-group.is-style-bk-box-shadow-large {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+}
+.wp-block-image.is-style-bk-box-shadow-hover img:hover,
+.wp-block-column.is-style-bk-box-shadow-hover:hover,
+.wp-block-columns.is-style-bk-box-shadow-hover:hover,
+.wp-block-group.is-style-bk-box-shadow-hover:hover {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.06);
+}
+
+/*Secondary button*/
+div.is-style-bk-button-secondary .wp-element-button{
+  color: var(--wp--preset--color--secondary-accent-text);
+  background-color: var(--wp--preset--color--secondary-accent);
+}
+div.is-style-bk-button-secondary .wp-element-button:hover,
+div.is-style-bk-button-secondary .wp-element-button:focus,
+div.is-style-bk-button-secondary .wp-element-button:active {
+    color: #ffffff;
+    background-color: var(--wp--preset--color--hover);
+}
+/*SVG icon color support*/
+.bk-duotone-primary {
+  filter: var(--wp--preset--duotone--primary);
+}
+.bk-duotone-secondary {
+  filter: var(--wp--preset--duotone--secondary);
+}
+
+/*WooCommerce Compatibility*/
+.woocommerce ul.products li.product a img {
+  border-radius: 6px;
+  height: 350px;
+  object-fit: cover;
+}
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+  margin: 0 2.5% 2.992em 0;
+  width: 23.1%;
+}
+.woocommerce ul.products li.last,
+.woocommerce-page ul.products li.last {
+  margin-right: 0;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+  border-radius: 0;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active:before,
+.woocommerce div.product .woocommerce-tabs ul.tabs li:before,
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active:after {
+  display: none;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li:after {
+  border: 0;
+}
+.woocommerce #reviews #comments ol.commentlist {
+  padding: 0;
+  margin-top: 20px !important;
+}
+.woocommerce-page .input-text {
+  padding: 11px 30px;
+  border: 1px solid #817e7e;
+  border-radius: 6px;
+}
+.woocommerce-page .wc-block-components-product-name {
+    font-size: var(--wp--preset--font-size--small);
+    text-decoration: none;
+    font-weight: var(--wp--custom--font-weight--semi-bold);
+}
+.woocommerce .bt-woo-breadcrumb-center .woocommerce-breadcrumb {
+  text-align: center;
+}
+.woocommerce .bt-woo-breadcrumb-left .woocommerce-breadcrumb {
+  text-align: left;
+}
+.woocommerce .bt-woo-breadcrumb-right .woocommerce-breadcrumb {
+  text-align: right;
+}
+
+/*Transparent & Sticky Header*/
+.bk-header-transparent,
+.bk-header-sticky {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+.bk-header-transparent {
+  position: absolute;
+}
+.bk-header-sticky {
+  position: fixed;
+}
+.bk-header-transparent > .has-background {
+  background: transparent !important;
+}
+.logged-in.admin-bar .bk-header-transparent,
+.logged-in.admin-bar .bk-header-sticky {
+    top: 32px;
+}
+@media screen and (max-width: 782px) {
+  .logged-in.admin-bar .bk-header-transparent,
+  .logged-in.admin-bar .bk-header-sticky {
+    top: 48px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bk-header-sticky {
+    position: absolute;
+  }
+}

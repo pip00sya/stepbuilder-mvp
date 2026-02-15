@@ -1,0 +1,315 @@
+/**
+ * Main UI Overrides — StepBuilder
+ * 
+ * Primary stylesheet that customizes the appearance of the entire platform:
+ * - Login/Register form cards (centered, rounded, shadowed)
+ * - User profile styling (name colors, header)
+ * - Header z-index and positioning
+ * - Close button (×) on auth pages
+ * - Social login button layout
+ * - Mobile responsive adjustments
+ * - Conditional visibility (logged-in users)
+ * 
+ * Original file: uploads/custom-css-js/165.css
+ */
+
+/* ===== Cover Block Fix ===== */
+.wp-block-cover.is-light {
+    z-index: 0 !important;
+}
+
+/* ===== User Profile Name ===== */
+.um-name a {
+    color: #333842 !important;
+}
+
+/* ===== Form Header ===== */
+.um-form .um-header {
+    border-bottom-style: none;
+}
+
+.um-header {
+    padding: 0 !important;
+    min-height: 45px;
+}
+
+/* ===== Profile Spacing ===== */
+.um-224.um {
+    margin-top: 0 !important;
+}
+
+.um-profile.um-viewing {
+    padding-bottom: 0 !important;
+}
+
+.um:not(.um-admin) {
+    margin-bottom: 0 !important;
+}
+
+/* ===== Login Form Card ===== */
+.um.um-login .um-form {
+    max-width: 420px;
+    margin: 12vh auto;
+    padding: 32px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* ===== Register Form Card ===== */
+.um.um-register .um-form {
+    max-width: 420px;
+    margin: auto;
+    padding: 32px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* ===== Form Headings (::before pseudo-elements) ===== */
+.um.um-login .um-form::before {
+    display: block;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+    color: #28314f;
+    margin-bottom: 25px;
+    content: "Login";
+}
+
+.um.um-register .um-form::before {
+    display: block;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+    color: #28314f;
+    margin-bottom: 20px;
+    content: "Sign Up";
+}
+
+/* ===== Form Inputs ===== */
+.um input[type="text"],
+.um input[type="email"],
+.um input[type="password"],
+.um select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    transition: border-color 0.3s ease;
+}
+
+.um input:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+/* ===== Submit Button ===== */
+.um input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.um input[type="submit"]:hover {
+    background: #1e40af;
+}
+
+/* ===== Links (e.g. "Forgot password?") ===== */
+.um a.um-link {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #2563eb;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.um a.um-link:hover {
+    text-decoration: underline;
+}
+
+/* ===== Messages (errors/success) ===== */
+.um .um-message {
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.um .um-error {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+.um .um-success {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+/* ===== Remove nested form styling ===== */
+.um .um .um-form {
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+/* ===== UM Button Colors ===== */
+.um a.um-button:hover,
+.um input[type=submit].um-button:hover {
+    background-color: #3d7ded;
+}
+
+.um a.um-button,
+.um a.um-button.um-disabled:active,
+.um a.um-button.um-disabled:focus,
+.um a.um-button.um-disabled:hover,
+.um input[type=submit].um-button,
+.um input[type=submit].um-button:focus {
+    background: #3d7ded;
+}
+
+/* ===== Social Login Buttons ===== */
+.nsl-container,
+.nsl-container-block,
+.nsl-container-inline {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+/* ===== Auth Page Background ===== */
+.wp-block-cover.is-light {
+    z-index: -1;
+}
+
+.page-id-227,
+.page-id-228 {
+    background-color: #f4fcff;
+}
+
+.page-id-227 .wp-block-group.is-style-default.has-accent-text-background-color.has-background,
+.page-id-228 .wp-block-group.is-style-default.has-accent-text-background-color.has-background {
+    background-color: #f4fcff !important;
+}
+
+/* ===== Close Button (×) on Auth Pages ===== */
+.page-id-227 .wp-block-group.is-horizontal.is-content-justification-right,
+.page-id-228 .wp-block-group.is-horizontal.is-content-justification-right {
+    position: relative;
+    min-width: 40px;
+    min-height: 40px;
+    cursor: pointer;
+}
+
+.page-id-227 .wp-block-group.is-horizontal.is-content-justification-right>*,
+.page-id-228 .wp-block-group.is-horizontal.is-content-justification-right>* {
+    display: none;
+}
+
+.page-id-227 .wp-block-group.is-horizontal.is-content-justification-right::after,
+.page-id-228 .wp-block-group.is-horizontal.is-content-justification-right::after {
+    content: "×";
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 44px;
+    font-weight: 300;
+    color: #333;
+    line-height: 1;
+}
+
+.page-id-227 .wp-block-group.is-horizontal.is-content-justification-right:hover::after,
+.page-id-228 .wp-block-group.is-horizontal.is-content-justification-right:hover::after {
+    font-weight: 360;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* ===== Profile Name Colors ===== */
+.um-224.um {
+    margin-top: 3vh;
+}
+
+.um-profile.um .um-name a {
+    color: #ffffff;
+}
+
+.um-profile.um .um-name a:hover {
+    color: #cfe7fc;
+}
+
+/* ===== Hero Section Padding ===== */
+.wp-block-cover.is-light.has-x-small-font-size {
+    padding-top: 9vh;
+    padding-bottom: 12vh;
+}
+
+/* ===== Hide Sign Up button for logged-in users ===== */
+body.logged-in .wp-block-button.is-style-outline.is-style-outline--1,
+body.logged-in .wp-block-buttons.is-content-justification-right {
+    display: none;
+}
+
+/* ===== Auth Page Header ===== */
+.page-id-227 header,
+.page-id-228 header {
+    position: relative;
+    z-index: 9999;
+}
+
+/* ===== Responsive: Tablet ===== */
+@media (max-width: 900px) {
+    .wp-block-group.is-content-justification-space-between.is-nowrap {
+        max-width: 100%;
+    }
+}
+
+/* ===== Responsive: Mobile ===== */
+@media (max-width: 500px) {
+    .wp-block-buttons.is-content-justification-right {
+        display: none;
+    }
+
+    .wp-block-cover.is-light.has-x-small-font-size {
+        padding-top: 2vh;
+        padding-bottom: 5svh;
+    }
+
+    .wp-block-site-logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .page-id-227 header,
+    .page-id-228 header {
+        background-color: #fff !important;
+    }
+
+    .um.um-login .um-form {
+        margin: -15px auto;
+    }
+
+    .um.um-register .um-form {
+        margin: -15px auto;
+    }
+
+    .wp-block-site-logo,
+    .custom-logo {
+        width: 48px !important;
+        height: 48px !important;
+    }
+}

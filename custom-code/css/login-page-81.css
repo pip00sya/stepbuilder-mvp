@@ -1,0 +1,83 @@
+/**
+ * Login Page Styling (Page ID 81) — StepBuilder
+ * 
+ * Page-specific styling for the login form on page 81.
+ * Features: positioned "Войти" heading via ::before, tall input fields,
+ * custom focus glow effect, blue button color.
+ * 
+ * Original file: uploads/custom-css-js/58.css
+ */
+
+/* Form container */
+.page-id-81 .um-form {
+    max-width: 400px;
+    margin: 100px auto 130px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    padding: 120px 40px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    min-height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* "Login" heading */
+.page-id-81 .um-form::before {
+    content: "Войти";
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 26px;
+    font-weight: 600;
+    color: #44484d;
+    text-transform: none;
+    letter-spacing: normal;
+    user-select: none;
+}
+
+/* Input fields */
+.page-id-81 .um-form input[type="text"],
+.page-id-81 .um-form input[type="email"],
+.page-id-81 .um-form input[type="password"] {
+    height: 52px;
+    border-radius: 10px;
+    border: 1.8px solid #ccc;
+    padding: 0 16px;
+    font-size: 18px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 22px;
+}
+
+.page-id-81 .um-form input[type="text"]:focus,
+.page-id-81 .um-form input[type="email"]:focus,
+.page-id-81 .um-form input[type="password"]:focus {
+    border-color: #4a6fa5;
+    box-shadow: 0 0 10px rgba(74, 111, 165, 0.5);
+    outline: none;
+}
+
+/* Submit button */
+.um a.um-button,
+.um input[type=submit].um-button,
+.um input[type=submit].um-button:focus {
+    background: #3a72d3;
+}
+
+/* Error messages */
+.page-id-81 .um-form .um-notices {
+    color: #d93025;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Page content spacing */
+.page-id-81 .site-content {
+    padding: 80px 20px;
+}

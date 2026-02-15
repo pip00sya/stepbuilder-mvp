@@ -1,0 +1,180 @@
+/**
+ * Auth Forms v1 — StepBuilder
+ * 
+ * Card-based login/register/profile form styling.
+ * Centered with shadow, rounded corners, blue accent color.
+ * Includes profile page and account page tabs.
+ * 
+ * Original file: uploads/custom-css-js/154.css
+ */
+
+/* ===== Center forms ===== */
+.um,
+.um-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px;
+}
+
+/* ===== Form card ===== */
+.um-form {
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* ===== Headings ===== */
+.um .um-form .um-form-header h1,
+.um .um-form .um-form-header h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* ===== Form fields ===== */
+.um input[type="text"],
+.um input[type="email"],
+.um input[type="password"],
+.um input[type="tel"],
+.um select,
+.um textarea {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    font-size: 16px;
+    transition: border-color 0.3s, background 0.3s;
+}
+
+.um input:focus,
+.um select:focus,
+.um textarea:focus {
+    border-color: #3498db;
+    background: #fff;
+    outline: none;
+}
+
+/* ===== Submit button ===== */
+.um input[type="submit"],
+.um .um-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.um input[type="submit"]:hover,
+.um .um-button:hover {
+    background-color: #2980b9;
+}
+
+/* ===== Links ===== */
+.um a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.um a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Error/Success messages ===== */
+.um .um-field-error,
+.um .um-message {
+    font-size: 14px;
+    margin-top: 5px;
+    color: red;
+}
+
+.um .um-message.success {
+    color: green;
+}
+
+/* ===== Profile & Account pages ===== */
+.um-profile-body,
+.um-account {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+/* Profile tabs */
+.um-profile-nav,
+.um-account-nav {
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Tab buttons */
+.um-profile-nav-item a,
+.um-account-nav-item a {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: #f2f2f2;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.um-profile-nav-item a:hover,
+.um-account-nav-item a:hover,
+.um-profile-nav-item.active a,
+.um-account-nav-item.active a {
+    background: #3498db;
+    color: #fff;
+}
+
+/* Account page fields */
+.um-account input[type="text"],
+.um-account input[type="email"],
+.um-account input[type="password"],
+.um-account select,
+.um-account textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    font-size: 16px;
+}
+
+/* Account buttons */
+.um-account input[type="submit"],
+.um-account .um-button {
+    width: auto;
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.um-account input[type="submit"]:hover,
+.um-account .um-button:hover {
+    background-color: #2980b9;
+}

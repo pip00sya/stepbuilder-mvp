@@ -1,0 +1,281 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+.wp-block-cover.is-light {
+    z-index: 0 !important;
+}
+
+.um-name a{
+	color: #333842 !important;
+}
+
+.um-form .um-header{
+	border-bottom-style: none;
+}
+.um-header{
+	padding: 0 !important;
+	min-height:45px;
+}
+
+.um-224.um {
+    margin-top: 0 !important;
+}
+.um-profile.um-viewing {
+    padding-bottom: 0 !important;
+}
+.um:not(.um-admin) {
+    margin-bottom: 0 !important;
+}
+
+.um.um-login .um-form {
+max-width: 420px;
+    margin: 12vh auto;
+    padding: 32px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    position: relative;
+    box-sizing: border-box;
+}
+
+.um.um-register .um-form {
+max-width: 420px;
+    margin: auto;
+    padding: 32px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* 🔹 Заголовки формы (добавляются через ::before) */
+.um.um-login .um-form::before {
+  display: block;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  color: #28314f;
+  margin-bottom: 25px;
+}
+
+.um.um-register .um-form::before {
+  display: block;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  color: #28314f;
+  margin-bottom: 20px;
+}
+
+/* 🔹 Уникальные надписи */
+.um.um-login .um-form::before {
+  content: "Login";
+}
+
+.um.um-register .um-form::before {
+  content: "Sign Up";
+}
+
+/* 🔹 Поля формы */
+.um input[type="text"],
+.um input[type="email"],
+.um input[type="password"],
+.um select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  font-size: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  transition: border-color 0.3s ease;
+}
+
+.um input:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+/* 🔹 Кнопка отправки */
+.um input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.um input[type="submit"]:hover {
+  background: #1e40af;
+}
+
+/* 🔹 Ссылки (напр. “Забыли пароль?”) */
+.um a.um-link {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #2563eb;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.um a.um-link:hover {
+  text-decoration: underline;
+}
+
+/* 🔹 Сообщения (ошибки/успех) */
+.um .um-message {
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.um .um-error {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.um .um-success {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+/* 🔹 Удаляем ненужные вложенные блоки */
+.um .um .um-form {
+  background: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.um a.um-button:hover, .um input[type=submit].um-button:hover {
+    background-color: #3d7ded;
+}
+
+.um a.um-button, .um a.um-button.um-disabled:active, .um a.um-button.um-disabled:focus, .um a.um-button.um-disabled:hover, .um input[type=submit].um-button, .um input[type=submit].um-button:focus {
+    background: #3d7ded;
+}
+
+.nsl-container, .nsl-container-block, .nsl-container-inline {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+
+.wp-block-cover.is-light{
+	z-index:-1;
+}
+.page-id-227,
+.page-id-228 {
+  background-color: #f4fcff ;
+}
+.page-id-227 .wp-block-group.is-style-default.has-accent-text-background-color.has-background.has-global-padding.is-content-justification-center.is-layout-constrained.wp-container-core-group-is-layout-262ab7ce.wp-block-group-is-layout-constrained,
+.page-id-228 .wp-block-group.is-style-default.has-accent-text-background-color.has-background.has-global-padding.is-content-justification-center.is-layout-constrained.wp-container-core-group-is-layout-262ab7ce.wp-block-group-is-layout-constrained {
+  background-color: #f4fcff !important;
+}
+
+/* Блоки на нужных страницах */
+.page-id-227 .wp-block-group.is-horizontal.is-content-justification-right,
+.page-id-228 .wp-block-group.is-horizontal.is-content-justification-right {
+  position: relative;
+  min-width: 40px;
+  min-height: 40px;
+  cursor: pointer;
+}
+
+/* Прячем старое содержимое */
+.page-id-227 .wp-block-group.is-horizontal.is-content-justification-right > *,
+.page-id-228 .wp-block-group.is-horizontal.is-content-justification-right > * {
+  display: none;
+}
+
+/* Крестик */
+.page-id-227 .wp-block-group.is-horizontal.is-content-justification-right::after,
+.page-id-228 .wp-block-group.is-horizontal.is-content-justification-right::after {
+  content: "×";
+  position: absolute;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+  font-size: 44px; /* чуть больше */
+  font-weight: 300; /* тонкий стиль */
+  color: #333; /* тёмно-серый */
+  line-height: 1;
+}
+
+
+.page-id-227 .wp-block-group.is-horizontal.is-content-justification-right:hover::after,
+.page-id-228 .wp-block-group.is-horizontal.is-content-justification-right:hover::after {
+  font-weight: 360; /* увеличиваем толщину */
+  transform: translate(-50%, -50%) scale(1.1); /* слегка увеличиваем крестик */
+}
+
+.um-224.um {
+  margin-top: 3vh; 
+}
+
+.um-profile.um .um-name a {
+    color: #ffffff;
+}
+.um-profile.um .um-name a:hover {
+    color: #cfe7fc;
+}
+
+	.wp-block-cover.is-light.has-x-small-font-size {
+		padding-top: 9vh;
+		padding-bottom: 12vh;
+}
+
+body.logged-in .wp-block-button.is-style-outline.is-style-outline--1, body.logged-in .wp-block-buttons.is-content-justification-right.is-layout-flex.wp-container-core-buttons-is-layout-d445cf74.wp-block-buttons-is-layout-flex {
+    display: none;
+}
+
+	.page-id-227 header,
+	.page-id-228 header {
+  position: relative; /* или absolute/fixed/sticky, в зависимости от задачи */
+  z-index: 9999;      /* максимально высокий слой */
+}
+
+@media (max-width: 900px) {
+ 	.wp-block-group.is-content-justification-space-between.is-nowrap.is-layout-flex.wp-container-core-group-is-layout-ae184ed6.wp-block-group-is-layout-flex {
+    	max-width: 100%;   
+  }
+}
+@media (max-width: 500px) {
+	.wp-block-buttons.is-content-justification-right.is-layout-flex.wp-container-core-buttons-is-layout-d445cf74.wp-block-buttons-is-layout-flex{
+		display: none;
+	}	
+	.wp-block-cover.is-light.has-x-small-font-size {
+		padding-top: 2vh;
+		padding-bottom: 5svh;
+	}
+	.wp-block-site-logo img{
+		width: 50px;
+		height: 50px;
+	}
+	.page-id-227 header,
+.page-id-228 header {
+  background-color: #fff !important;
+}
+	.um.um-login .um-form {
+	margin: -15px auto;
+} 
+
+	.um.um-register .um-form {
+  margin: -15px auto;
+}
+	.wp-block-site-logo, .custom-logo {
+		width: 48px !important;
+		height: 48px !important;
+	}
+	
+}
+
+}</style>
+<!-- end Simple Custom CSS and JS -->
