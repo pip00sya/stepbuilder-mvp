@@ -1,0 +1,104 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Центрирование формы */
+body .um.um-login,
+body .um.um-register,
+body .um.um-password-reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: #f1f5f9;
+  padding: 20px;
+}
+
+/* Основной контейнер формы */
+.um .um-form {
+  max-width: 420px;
+  width: 100%;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Заголовки */
+.um .um-form-head h1,
+.um .um-form-head h3 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+}
+
+/* Поля формы */
+.um input[type="text"],
+.um input[type="email"],
+.um input[type="password"],
+.um select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  font-size: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  transition: border 0.2s ease;
+}
+
+.um input:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+/* Кнопка отправки */
+.um input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.um input[type="submit"]:hover {
+  background: #1e40af;
+}
+
+/* Ссылки */
+.um a.um-link {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #2563eb;
+  text-decoration: none;
+  margin-top: 12px;
+}
+
+.um a.um-link:hover {
+  text-decoration: underline;
+}
+
+/* Сообщения об ошибке или успехе */
+.um .um-message {
+  margin-bottom: 15px;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.um .um-error {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.um .um-success {
+  background: #dcfce7;
+  color: #15803d;
+}</style>
+<!-- end Simple Custom CSS and JS -->

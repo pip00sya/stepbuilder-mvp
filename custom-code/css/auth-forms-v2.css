@@ -1,0 +1,84 @@
+/**
+ * Auth Forms v2 — StepBuilder
+ * 
+ * Alternative styling for login, registration, and password reset forms.
+ * Features a modern card design with Blue/Slate color scheme and Segoe UI typography.
+ * 
+ * Original file: uploads/custom-css-js/162.css
+ */
+
+.um,
+.um-form,
+.um-login,
+.um-register,
+.um-password-reset {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.um .um-form-head h1,
+.um .um-form-head h3 {
+    text-align: center;
+    color: #1e3a8a;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.um input[type="text"],
+.um input[type="email"],
+.um input[type="password"],
+.um input[type="submit"],
+.um select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    margin-bottom: 16px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.um input[type="submit"] {
+    background-color: #2563eb;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.um input[type="submit"]:hover {
+    background-color: #1e40af;
+}
+
+.um a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.um a:hover {
+    text-decoration: underline;
+}
+
+.um .um-message {
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.um .um-error {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.um .um-success {
+    background: #dcfce7;
+    color: #166534;
+}

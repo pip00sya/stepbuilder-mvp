@@ -1,0 +1,169 @@
+/**
+ * ACF Forms Styling — StepBuilder
+ * 
+ * Modern card-based styling for Advanced Custom Fields forms.
+ * Uses Inter font from Google Fonts for a clean, professional look.
+ * Includes styling for: inputs, textareas, repeater fields, buttons,
+ * file uploaders, and fade-in animations.
+ * 
+ * Original file: uploads/custom-css-js/336.css
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+.acf-form {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #ebeefc;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* Field groups */
+.acf-field {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Labels */
+.acf-label label {
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+}
+
+/* Input fields */
+.acf-input input[type="text"],
+.acf-input input[type="email"],
+.acf-input input[type="url"],
+.acf-input input[type="number"],
+.acf-input textarea,
+.acf-input select {
+    background: #ffffff;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.acf-input input:hover,
+.acf-input textarea:hover,
+.acf-input select:hover {
+    box-shadow: 0 0 0 2px #3366cc;
+}
+
+.acf-input input:focus,
+.acf-input textarea:focus,
+.acf-input select:focus {
+    border-color: #3366cc;
+    outline: none;
+    box-shadow: 0 0 0 2px #3366cc;
+}
+
+/* Textarea */
+.acf-input textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Repeater fields */
+.acf-repeater .acf-row {
+    background: #f9f9fc;
+    border: 1px solid #ebeefc;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+/* ACF Buttons */
+.acf-button,
+input[type="submit"].acf-button {
+    background-color: #3366cc;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.2s ease;
+}
+
+.acf-button:hover {
+    background-color: #274dbd;
+}
+
+/* Repeater add/remove buttons */
+.acf-button.-plus,
+.acf-button.-minus {
+    background-color: #ebeefc;
+    color: #3366cc;
+    padding: 6px 14px;
+    border-radius: 8px;
+}
+
+.acf-button.-plus:hover,
+.acf-button.-minus:hover {
+    background-color: #3366cc;
+    color: #ffffff;
+}
+
+/* Description text */
+.acf-field .description {
+    font-size: 12px;
+    color: #999999;
+    margin-top: 4px;
+}
+
+/* File/Image uploaders */
+.acf-input .acf-file-uploader,
+.acf-input .acf-image-uploader {
+    border: 1px dashed #d1d5db;
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+    color: #999999;
+}
+
+/* Fade-in animation */
+.acf-form .acf-fields {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .acf-form {
+        padding: 20px;
+        margin: 20px;
+    }
+}
+
+/* Autosave status indicator */
+.acf-saving-status {
+    font-size: 12px;
+    color: #3366cc;
+    margin-top: 4px;
+    transition: opacity 0.3s;
+}

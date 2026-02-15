@@ -1,0 +1,47 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Базовый стиль кнопки с прозрачным фоном */
+.wp-block-button__link.wp-element-button {
+  background-color: transparent;
+  color: #4BB8C9;
+  border: 2px solid #4BB8C9;
+  padding: 10px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+/* Hover — при наведении: цветной фон и белый текст */
+.wp-block-button__link.wp-element-button:hover {
+  background-color: #4BB8C9;
+  color: #FFFFFF;
+  box-shadow: 0 6px 20px rgba(75, 184, 201, 0.35);
+  border-color: #4BB8C9;
+}
+
+.is-style-outline--2 .wp-block-button__link.wp-element-button {
+  background-color: #4FC4D3;
+  color: #FFFFFF;
+  border: 2px solid #4FC4D3;
+  padding: 10px 24px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+.is-style-outline--2 .wp-block-button__link.wp-element-button:hover {
+  background-color: #4BB8C9;
+  color: #FFFFFF;
+  box-shadow: 0 6px 20px rgba(75, 184, 201, 0.35);
+  border-color: #4BB8C9;
+}
+.wp-block-template-part {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+	position: relative; /* или absolute/fixed, зависит от задачи */
+  z-index: 9999;
+}
+</style>
+<!-- end Simple Custom CSS and JS -->

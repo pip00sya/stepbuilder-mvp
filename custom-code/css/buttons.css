@@ -1,0 +1,57 @@
+/**
+ * Button Styling — StepBuilder
+ * 
+ * Custom button styles with teal color scheme (#4BB8C9).
+ * Outline variant with transparent background, filled variant with solid bg.
+ * Hover effects with shadow and color transitions.
+ * Also includes header shadow for template parts.
+ * 
+ * Original file: uploads/custom-css-js/364.css
+ */
+
+/* Outline button — transparent background */
+.wp-block-button__link.wp-element-button {
+    background-color: transparent;
+    color: #4BB8C9;
+    border: 2px solid #4BB8C9;
+    padding: 10px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: none;
+}
+
+/* Outline button hover — filled background */
+.wp-block-button__link.wp-element-button:hover {
+    background-color: #4BB8C9;
+    color: #FFFFFF;
+    box-shadow: 0 6px 20px rgba(75, 184, 201, 0.35);
+    border-color: #4BB8C9;
+}
+
+/* Filled button variant */
+.is-style-outline--2 .wp-block-button__link.wp-element-button {
+    background-color: #4FC4D3;
+    color: #FFFFFF;
+    border: 2px solid #4FC4D3;
+    padding: 10px 24px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: none;
+}
+
+.is-style-outline--2 .wp-block-button__link.wp-element-button:hover {
+    background-color: #4BB8C9;
+    color: #FFFFFF;
+    box-shadow: 0 6px 20px rgba(75, 184, 201, 0.35);
+    border-color: #4BB8C9;
+}
+
+/* Header shadow */
+.wp-block-template-part {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 9999;
+}

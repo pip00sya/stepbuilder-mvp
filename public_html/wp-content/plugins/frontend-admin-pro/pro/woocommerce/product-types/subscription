@@ -1,0 +1,60 @@
+<?php
+namespace Frontend_Admin\Woocommerce;
+
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly.
+}
+
+class Subscription extends \WC_Product {
+
+    public function __construct( $product ) {
+        $this->product_type = 'subscription';
+        parent::__construct( $product );
+    }
+
+    /**
+     * Get the product type.
+     *
+     * @return string
+     */
+    public function get_type() {
+        return 'subscription';
+    }
+}
+
+
+// Add the custom product type to the product type selector
+function add_subscription_product_type( $types ) {
+    $types[ 'subscription' ] = __( 'Subscription', 'woocommerce' );
+    return $types;
+}
+add_filter( 'product_type_selector', 'add_subscription_product_type' );
+
+// Add custom settings for the subscription product type
+function subscription_product_custom_fields() {
+    global $post;
+
+    if ( 'subscription' === get_post_meta( $post->ID, '_product_type', true ) ) {
+        echo '<div class="options_group">';
+        woocommerce_wp_text_input( array(
+            'id'          => '_subscription_price',
+            'label'       => __( 'Subscription Price', 'woocommerce' ),
+            'desc_tip'    => 'true',
+            'description' => __( 'Enter the price for the subscription.', 'woocommerce' ),
+            'type'        => 'number',
+            'custom_attributes' => array(
+                'step' => '0.01',
+                'min'  => '0'
+            )
+        ) );
+        echo '</div>';
+    }
+}
+add_action( 'woocommerce_product_options_general_product_data', 'subscription_product_custom_fields' );
+
+// Save custom fields for the subscription product type
+function save_subscription_product_custom_fields( $post_id ) {
+    $subscription_price = isset( $_POST['_subscription_price'] ) ? sanitize_text_field( $_POST['_subscription_price'] ) : '';
+    update_post_meta( $post_id, '_subscription_price', $subscription_price );
+}
+add_action( 'woocommerce_process_product_meta', 'save_subscription_product_custom_fields' );

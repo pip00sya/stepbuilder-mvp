@@ -1,0 +1,72 @@
+# ============================================
+# StepBuilder — WordPress .gitignore
+# ============================================
+
+# --- WordPress Core (можно скачать заново) ---
+public_html/wp-admin/
+public_html/wp-includes/
+public_html/wp-activate.php
+public_html/wp-blog-header.php
+public_html/wp-comments-post.php
+public_html/wp-config-sample.php
+public_html/wp-cron.php
+public_html/wp-links-opml.php
+public_html/wp-load.php
+public_html/wp-login.php
+public_html/wp-mail.php
+public_html/wp-settings.php
+public_html/wp-signup.php
+public_html/wp-trackback.php
+public_html/xmlrpc.php
+public_html/index.php
+public_html/license.txt
+public_html/readme.html
+public_html/.htaccess
+
+# --- Секреты и конфиги с паролями ---
+public_html/wp-config.php
+
+# --- Логи, кэш, бэкапы ---
+public_html/wp-content/debug.log
+public_html/wp-content/cache/
+public_html/wp-content/updraft/
+public_html/wp-content/upgrade/
+public_html/wp-content/upgrade-temp-backup/
+public_html/wp-content/wflogs/
+
+# --- Языковые пакеты (устанавливаются автоматически) ---
+public_html/wp-content/languages/
+
+# --- ZIP-архивы ---
+*.zip
+
+# --- Стандартные плагины из маркетплейса WordPress ---
+# (можно установить заново через WP Admin → Плагины)
+public_html/wp-content/plugins/advanced-custom-fields/
+public_html/wp-content/plugins/code-snippets/
+public_html/wp-content/plugins/elementor/
+public_html/wp-content/plugins/limit-login-attempts-reloaded/
+public_html/wp-content/plugins/nextend-facebook-connect/
+public_html/wp-content/plugins/seo-by-rank-math/
+public_html/wp-content/plugins/ultimate-member/
+public_html/wp-content/plugins/updraftplus/
+public_html/wp-content/plugins/wordfence/
+public_html/wp-content/plugins/wp-fastest-cache/
+public_html/wp-content/plugins/wp-phpmyadmin-extension/
+
+# --- Медиа-загрузки (картинки, файлы пользователей) ---
+public_html/wp-content/uploads/2025/
+public_html/wp-content/uploads/2026/
+public_html/wp-content/uploads/ultimatemember/
+public_html/wp-content/uploads/fea-submissions/
+public_html/wp-content/uploads/rank-math/
+public_html/wp-content/uploads/*.log
+
+# --- OS & IDE ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.code-workspace
